@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/deeowemez/cicd-test.git'
+                git branch: 'main', url: 'https://github.com/deeowemez/cicd-test.git', credentialsId: '1ee3b314-8b50-47a0-8fa4-197044904885'
             }
         }
 
