@@ -1,0 +1,23 @@
+{
+  "name": "cicd-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deeowemez/cicd-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deeowemez/cicd-test/issues"
+  },
+  "homepage": "https://github.com/deeowemez/cicd-test#readme",
+  "description": "",
+  "devDependencies": {
+    "playwright": "^1.51.1"
+  }
+}
