@@ -9,8 +9,17 @@ docker run -d \
  -v jenkins_home:/var/jenkins_home \
  jenkins-with-node
 ```
+# Setup Jenkins Admin account
+
+1. Enter docker container through `docker exec -it jenkins-node bash` <br>
+2. Retrieve password from `cat /var/jenkins_home/secrets/initialAdminPassword` in jenkins docker container <br>
+3. Install suggested plugins
 
 # Automatically trigger a build on every commit
+
+### Set Up Global Tool Config
+1. Select Mange Jenkins, then Tools
+2. Under Git installations, input `/usr/bin/git/` as Path to Git executable
 
 ### Set Up a Jenkins Job for Your Repository
 
@@ -22,7 +31,7 @@ docker run -d \
 
 1. Under Trigger, select GitHub hook trigger for GITScm polling
 2. Under Pipeline Definition, select Pipeline script from SCM
-3. Choose Git and enter the repository URL
+3. Choose Git and enter the repository URL: `https://github.com/deeowemez/cicd-test`
 
 ### Enable Webhooks for Automatic Builds
 
