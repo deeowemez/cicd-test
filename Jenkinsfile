@@ -1,8 +1,9 @@
 pipeline {
     agent {
         docker {
-            image 'node:16'
-        }  
+            image 'node:alpine'   # Uses lightweight Alpine Node.js
+            args '-u root'        # Avoid permission issues
+        }
     }
 
     stages {
