@@ -51,7 +51,7 @@ docker run -d \
    _HTTP ERROR 403 No valid crumb was included in the request_ <br>
 
    Use the API Token in GitHub Webhook <br>
-
+   - Generate API token by clicking Jenkins user, then security
    - Change your GitHub Webhook URL to: <br>
      `https://USERNAME:TOKEN@123456789.ngrok-free.app/github-webhook/`
 
